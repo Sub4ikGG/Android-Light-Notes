@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/create"
+        android:title="@string/create"
+        android:icon="@drawable/create_icon"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/deleted_notes"
+        android:title="@string/garbage"
+        android:icon="@drawable/create_icon"
+        app:showAsAction="never"/>
+</menu>

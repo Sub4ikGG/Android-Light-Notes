@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notebook</string>
+    <string name="create">Создать заметку</string>
+    <string name="clear">Удалить заметку</string>
+    <string name="create_check">Создать чек-заметку</string>
+    <string name="garbage">Корзина</string>
+</resources>

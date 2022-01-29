@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PersonalizationNote">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/line"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/radius_background"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_select_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_select_color"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_select_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Выбери цвет заметки"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_select_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Выбери шрифт заметки"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/color_box" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/color_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/color_view"
+        app:layout_constraintStart_toStartOf="@+id/color_view"
+        app:layout_constraintTop_toBottomOf="@+id/color_view">
+
+        <CheckBox
+            android:id="@+id/rbColor2"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="@+id/rbColor1"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color9"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_9"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor9"
+            app:layout_constraintStart_toEndOf="@+id/rbColor9"
+            app:layout_constraintTop_toTopOf="@+id/rbColor9">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color6"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_6"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor6"
+            app:layout_constraintStart_toEndOf="@+id/rbColor6"
+            app:layout_constraintTop_toTopOf="@+id/rbColor6">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_1"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor1"
+            app:layout_constraintStart_toEndOf="@+id/rbColor1"
+            app:layout_constraintTop_toTopOf="@+id/rbColor1">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/rbColor9"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="@+id/rbColor6"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor6" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color2"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_2"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor2"
+            app:layout_constraintStart_toEndOf="@+id/rbColor2"
+            app:layout_constraintTop_toTopOf="@+id/rbColor2">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/rbColor8"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="@+id/rbColor4"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor4" />
+
+        <CheckBox
+            android:id="@+id/rbColor1"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:backgroundTint="#000000"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color5"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_5"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor5"
+            app:layout_constraintStart_toEndOf="@+id/rbColor5"
+            app:layout_constraintTop_toTopOf="@+id/rbColor5">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/rbColor6"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="@+id/rbColor5"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color7"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_7"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor7"
+            app:layout_constraintStart_toEndOf="@+id/rbColor7"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor2">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/rbColor3"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_color1"
+            app:layout_constraintStart_toEndOf="@+id/bg_color1"
+            app:layout_constraintTop_toTopOf="@+id/bg_color1" />
+
+        <CheckBox
+            android:id="@+id/rbColor7"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="@+id/rbColor2"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color3"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="32dp"
+            android:background="@color/color_note_3"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor3"
+            app:layout_constraintStart_toEndOf="@+id/rbColor3"
+            app:layout_constraintStart_toStartOf="@+id/rbColor3"
+            app:layout_constraintTop_toTopOf="@+id/rbColor3">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/rbColor5"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_color3"
+            app:layout_constraintStart_toEndOf="@+id/bg_color3"
+            app:layout_constraintTop_toTopOf="@+id/bg_color3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color8"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_8"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor8"
+            app:layout_constraintStart_toEndOf="@+id/rbColor8"
+            app:layout_constraintTop_toTopOf="@+id/rbColor8">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/rbColor4"
+            android:layout_width="32dp"
+            android:layout_height="41dp"
+            android:theme="@style/MyCheckBox"
+            app:layout_constraintStart_toStartOf="@+id/rbColor3"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bg_color4"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@color/color_note_4"
+            android:hapticFeedbackEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/rbColor4"
+            app:layout_constraintStart_toEndOf="@+id/rbColor4"
+            app:layout_constraintTop_toBottomOf="@+id/rbColor3">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/color_view"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/color_note_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_color">
+
+        <TextView
+            android:id="@+id/note_name_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-light"
+            android:text="Заметка #1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/clip_pin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/line2"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/radius_background"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_select_font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_select_font"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_note_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/color_note_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_done_24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_font1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/color_note_2"
+        android:fontFamily="sans-serif-light"
+        android:text="Sans Serif Light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_font" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_font2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_note_2"
+        android:fontFamily="sans-serif"
+        android:text="Sans Serif"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_font1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_font1"
+        app:layout_constraintTop_toBottomOf="@+id/button_font1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_font3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_note_2"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sans Serif Medium"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_font2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_font2"
+        app:layout_constraintTop_toBottomOf="@+id/button_font2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
