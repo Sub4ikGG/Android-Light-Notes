@@ -12,11 +12,11 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
-import com.efremov.notebook.MyNote
 import com.efremov.notebook.R
-import com.efremov.notebook.classes.DataNote
 import com.efremov.notebook.databinding.NoteItemBinding
 import com.efremov.notebook.db.dbManager
+import com.efremov.notebook.model.DataNote
+import com.efremov.notebook.view.MyNote
 
 @SuppressLint("NotifyDataSetChanged")
 class NoteAdapter(val activity: Activity, val fragmentManager: FragmentManager) : RecyclerView.Adapter<NoteAdapter.NoteHolder>() {
