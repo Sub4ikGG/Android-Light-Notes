@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notebook">
         <activity
-            android:name=".Garbage"
+            android:name=".view.Garbage"
             android:exported="false" />
         <activity
-            android:name=".MyNote"
+            android:name=".view.MyNote"
             android:exported="false" />
         <activity
-            android:name=".PersonalizationNote"
+            android:name=".view.PersonalizationNote"
             android:exported="false" />
         <activity
-            android:name=".CreateNote"
+            android:name=".view.CreateNote"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
