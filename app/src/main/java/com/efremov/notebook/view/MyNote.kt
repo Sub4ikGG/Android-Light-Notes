@@ -1,4 +1,4 @@
-package com.efremov.notebook
+package com.efremov.notebook.view
 
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
@@ -16,9 +15,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.widget.addTextChangedListener
-import com.efremov.notebook.classes.DataNote
+import com.efremov.notebook.R
 import com.efremov.notebook.databinding.ActivityMyNoteBinding
 import com.efremov.notebook.db.dbManager
+import com.efremov.notebook.model.DataNote
 
 class MyNote : AppCompatActivity() {
     private var launcher: ActivityResultLauncher<Intent>? = null
@@ -29,7 +29,6 @@ class MyNote : AppCompatActivity() {
     private var content = ""
     private var id = 0
     private var color = 0
-    private var index = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,15 +1,15 @@
-package com.efremov.notebook
+package com.efremov.notebook.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toDrawable
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.efremov.notebook.R
 import com.efremov.notebook.databinding.ActivityGarbageBinding
 import com.efremov.notebook.db.dbManager
 import com.efremov.notebook.recyclerview.GarbageAdapter
 import com.efremov.notebook.recyclerview.Note
-import com.efremov.notebook.recyclerview.NoteAdapter
 
 class Garbage : AppCompatActivity() {
     lateinit var binding: ActivityGarbageBinding

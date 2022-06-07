@@ -1,4 +1,4 @@
-package com.efremov.notebook
+package com.efremov.notebook.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,9 +9,10 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toDrawable
-import com.efremov.notebook.classes.DataNote
+import com.efremov.notebook.R
 import com.efremov.notebook.databinding.ActivityCreateNoteBinding
 import com.efremov.notebook.db.dbManager
+import com.efremov.notebook.model.DataNote
 
 class CreateNote : AppCompatActivity() {
     lateinit var binding: ActivityCreateNoteBinding
