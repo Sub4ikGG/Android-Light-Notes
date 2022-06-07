@@ -14,6 +14,8 @@ import com.efremov.notebook.databinding.ActivityMainBinding
 import com.efremov.notebook.db.dbManager
 import com.efremov.notebook.recyclerview.Note
 import com.efremov.notebook.recyclerview.NoteAdapter
+import com.efremov.notebook.view.CreateNote
+import com.efremov.notebook.view.Garbage
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
