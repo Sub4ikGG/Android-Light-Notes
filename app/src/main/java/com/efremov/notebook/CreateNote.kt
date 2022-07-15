@@ -9,7 +9,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toDrawable
-import com.efremov.notebook.classes.DataNote
+import com.efremov.notebook.data.DataNote
 import com.efremov.notebook.databinding.ActivityCreateNoteBinding
 import com.efremov.notebook.db.dbManager
 

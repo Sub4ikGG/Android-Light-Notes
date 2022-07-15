@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
@@ -16,7 +15,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toDrawable
 import androidx.core.widget.addTextChangedListener
-import com.efremov.notebook.classes.DataNote
+import com.efremov.notebook.data.DataNote
 import com.efremov.notebook.databinding.ActivityMyNoteBinding
 import com.efremov.notebook.db.dbManager
 
@@ -29,7 +28,6 @@ class MyNote : AppCompatActivity() {
     private var content = ""
     private var id = 0
     private var color = 0
-    private var index = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -154,8 +152,17 @@ class MyNote : AppCompatActivity() {
             builder.setMessage("Вы точно хотите удалить '$name?'")
             builder.setPositiveButton("Удалить") { _: DialogInterface, _: Int ->
                 databaseManager.openDatabase()
-                databaseManager.clearNote(DataNote(id, name, content, color.toString(), "active"))
-                Toast.makeText(this, "Заметка успешно удалена", Toast.LENGTH_SHORT).show()
+                databaseManager.updateNote(
+                    DataNote(
+                        id,
+                        name,
+                        content,
+                        color.toString(),
+                        "non-active"
+                    )
+                )
+                Toast.makeText(this, "Заметка успешно удалена", Toast.LENGTH_SHORT)
+                    .show()
                 finish()
             }
             builder.setNegativeButton("Оставить") { _: DialogInterface, _: Int -> }

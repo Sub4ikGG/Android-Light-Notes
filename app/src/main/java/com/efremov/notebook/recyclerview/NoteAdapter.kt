@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.efremov.notebook.MyNote
 import com.efremov.notebook.R
-import com.efremov.notebook.classes.DataNote
+import com.efremov.notebook.data.DataNote
 import com.efremov.notebook.databinding.NoteItemBinding
 import com.efremov.notebook.db.dbManager
 
