@@ -1,12 +1,12 @@
-package com.efremov.notebook
+package com.efremov.notebook.view
 
 import android.content.Intent
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toDrawable
+import com.efremov.notebook.R
 import com.efremov.notebook.databinding.ActivityPersonalizationNoteBinding
 import com.efremov.notebook.db.dbManager
 
