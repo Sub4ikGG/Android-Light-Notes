@@ -4,18 +4,16 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.DialogInterface
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.efremov.notebook.R
+import com.efremov.notebook.data.DataNote
 import com.efremov.notebook.databinding.NoteItemBinding
 import com.efremov.notebook.db.dbManager
-import com.efremov.notebook.model.DataNote
 
 @SuppressLint("NotifyDataSetChanged")
 class GarbageAdapter(val activity: Activity) :

@@ -4,12 +4,12 @@ import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
+import com.efremov.notebook.data.DataNote
 import com.efremov.notebook.db.db.COLUMN_NAME
 import com.efremov.notebook.db.db.COLUMN_NAME_COLOR
 import com.efremov.notebook.db.db.COLUMN_NAME_CONTENT
 import com.efremov.notebook.db.db.COLUMN_NAME_STATUS
 import com.efremov.notebook.db.db.KEY_ID
-import com.efremov.notebook.model.DataNote
 
 class dbManager(context: Context) {
     private val dbHelper = dbHelper(context)
@@ -44,7 +44,7 @@ class dbManager(context: Context) {
             val name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME))
             val content = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_CONTENT))
             val color = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_COLOR))
-            val status = cursor.getString(cursor.getColumnIndex(db.COLUMN_NAME_STATUS))
+            val status = cursor.getString(cursor.getColumnIndex(COLUMN_NAME_STATUS))
             data.add(DataNote(id.toInt(), name, content, color, status))
         }
 
