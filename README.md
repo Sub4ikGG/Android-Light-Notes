@@ -1,7 +1,7 @@
 # Android Light Notes
 
 Create and edit notes.  
-SQLite, Multi-activity.
+SQLite, No-Room, Multi-activity.
 
 ![изображение](https://user-images.githubusercontent.com/98654420/172466823-9ed1799c-e128-481f-9857-6fcaa3e2ab14.png)
 ![изображение](https://user-images.githubusercontent.com/98654420/172467161-2da9d736-bd67-4d68-ab42-39725594d623.png)
